@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://nithy95.github.io/portfolio",
+  "homepage": "https://kaushik27.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -42,7 +42,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "PORT=4000 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
