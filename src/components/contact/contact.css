@@ -1,0 +1,60 @@
+.contact {
+  margin: 1% 5% 1% 5%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-pitch-container {
+  text-align: center;
+}
+
+.contact-container ul {
+  width: fit-content;
+  list-style: none;
+}
+
+.contact-container ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.social-bar {
+  margin: 30px 30px 0;
+  overflow: hidden;
+}
+
+.copy-text {
+  width: 260px;
+  font-size: 1rem;
+}
+
+.contact-pitch {
+  font-size: 1.25rem;
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-pitch tr th {
+  padding: 5px;
+  font-family: "Nunito", sans-serif;
+  font-weight: normal;
+}
+.copy-write {
+  margin-top: 2%;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 768px) {
+  .contact-pitch {
+    font-size: 1.1rem;
+  }
+  .copy-text {
+    width: 260px;
+    font-size: 1rem;
+  }
+}

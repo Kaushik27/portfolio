@@ -1,0 +1,147 @@
+.intro {
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.intro .left {
+  flex: 0.5;
+  overflow: hidden;
+}
+.intro .left .imgContainer {
+  margin-top: 90px;
+  width: 700px;
+  height: 700px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  float: right;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .intro .left .imgContainer {
+    align-items: flex-start;
+  }
+}
+
+.intro .left .imgContainer img {
+  height: 90%;
+}
+
+@media (max-width: 768px) {
+  .intro .left .imgContainer img {
+    height: 50%;
+    margin-top: 8px;
+    /* TODO: Need to figure out a way to make the image sit on the border for all devices */
+  }
+}
+.intro .right {
+  flex: 0.5;
+  position: relative;
+  font-family: "Nunito", sans-serif;
+}
+.intro .right .wrapper {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .intro .right .wrapper {
+    padding-left: 0;
+    align-items: center;
+  }
+}
+.intro .right .wrapper h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+@media (max-width: 768px) {
+  .intro .right .wrapper h1 {
+    font-size: 40px;
+  }
+}
+.intro .right .wrapper h2 {
+  font-size: 35px;
+}
+.intro .right .wrapper h3 {
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .intro .right .wrapper h3 {
+    font-size: 20px;
+  }
+}
+
+.intro .right .wrapper h3 span {
+  font-size: inherit;
+  color: var(--primary-color);
+}
+
+.intro .right .wrapper h3 .ityped-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro .right img {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+  width: 30px;
+  animation: arrowBlink 2s infinite;
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro .right .wrapper p {
+  font-size: 14px;
+  padding-top: 20px;
+  text-align: start;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .intro .right .wrapper p {
+    text-align: center;
+  }
+}
+
+.intro .right .wrapper Button {
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  margin-top: 4%;
+  box-shadow: 0px 0px 15px -8px #3c3e41;
+  font-family: "Nunito", sans-serif;
+}
+
+.intro .right .wrapper .hire-me {
+  background-color: var(--primary-color);
+}
+
+.intro .right .wrapper .know-more {
+  margin-left: 50px;
+  background-color: #565758;
+}

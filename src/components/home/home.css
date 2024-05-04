@@ -1,0 +1,11 @@
+.app .section {
+  margin-top: 80px;
+}
+
+.paper-bg {
+  background-image: radial-gradient(
+    var(--primary-color) 0.75px,
+    var(--background-color) 0.75px
+  );
+  background-size: 10px 10px;
+}
